@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
 
     <style>
-    p {        font-size: 15px 
-    }
-   button{background-color:green; 
-} 
-    .button {color:white}
-    a {text-decoration: none} 
-    
+      p {
+        font-size: 15px;
+      }
+      button {
+        background-color: green;
+      }
+      .button {
+        color: white;
+      }
+      a {
+        text-decoration: none;
+      }
     </style>
-</head>
-<body>
-        <form action="../../form-result.php" method="post" target="_blank">
+  </head>
+  <body>
+    <form action="../../form-result.php" method="post" target="_blank">
+      <p><label for="username">Username: </label></p>
+      <p>
+        <input
+          type="text"
+          name="user"
+          id="username"
+          placeholder="Pick a username"
+        />
+      </p>
 
-          <p> <label for= "username">Username: </label> </p>
-          <p> <input type="text" name="user" id = "username" placeholder="Pick a username"> </p>
+      <p><label for="email"> E-mail: </label></p>
+      <p>
+        <input
+          type="email"
+          name="emailaddress"
+          id="email"
+          placeholder="you@example.com"
+        />
+      </p>
 
-          <p> <label for= "email"> E-mail: </label> </p> 
-          <p><input type="email" name="emailaddress" id = "email" placeholder="you@example.com"> </p>
-          
-         <p> <label for = "password"> Password: </label> </p> 
-         <p> <input type="password" name="pass" id = "password" placeholder="Create a password"></p>
+      <p><label for="password"> Password: </label></p>
+      <p>
+        <input
+          type="password"
+          name="pass"
+          id="password"
+          placeholder="Create a password"
+        />
+      </p>
 
-    
-         
-    <p> Make sure it`s more than 15 characters, or at least 8 characters, including a number, and a lowercase letter. 
+      <p>
+        Make sure it`s more than 15 characters, or at least 8 characters,
+        including a number, and a lowercase letter.
+      </p>
+
+      <p><button class="button" type="submit">Sign up for GitHub</button></p>
+    </form>
+
+    <p>
+      By clicking "Sign up for GitHub", you agree to our
+      <a href="https://www.google.com/"> terms of service</a> and
+      <a href="https://www.google.com/"> privacy statement </a> . We`ll
+      occasionally send you account related emails.
     </p>
-
-    <p><button class="button" type="submit"  > Sign up for GitHub </button> </p>
-</form>
-
-<p> By clicking "Sign up for GitHub", you agree to our <a href="https://www.google.com/"> terms of service</a>
-    and <a href="https://www.google.com/"> privacy statement </a> . We`ll occasionally send you account related emails.</p>
-
-
-
-
-</body>
+  </body>
 </html>
